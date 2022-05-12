@@ -3,9 +3,8 @@ export function longestCommonPrefix(strs: string[]): string {
 
   for (let i = 1; i < strs.length; i += 1) {
     const word = strs[i];
-    const loopLength = word.length > res.length ? word.length : res.length;
 
-    for (let j = 0; j < loopLength; j += 1) {
+    for (let j = 0; j < res.length; j += 1) {
       if (word[j] !== res[j]) res = res.substring(0, j);
     }
   }
