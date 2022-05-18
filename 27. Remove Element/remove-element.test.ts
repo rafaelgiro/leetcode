@@ -13,7 +13,7 @@ const tests = [
   },
 ];
 
-describe("Longest Common Prefix", () => {
+describe("Remove Element", () => {
   it.each(tests)(
     "should return $output for $string",
     ({ output, nums, val }) => {

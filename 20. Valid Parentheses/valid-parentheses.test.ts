@@ -13,7 +13,7 @@ const tests = [
   { string: "({{{{}}}))", output: false },
 ];
 
-describe("Longest Common Prefix", () => {
+describe("Valid Parentheses", () => {
   it.each(tests)("should return $output for $string", ({ output, string }) => {
     expect(isValid(string)).toBe(output);
   });
