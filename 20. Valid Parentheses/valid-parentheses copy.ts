@@ -16,8 +16,11 @@ export function isValid(s: string): boolean {
       currentCharacter === "{"
     ) {
       res.push(currentCharacter);
-    } else if (pairs[lastCharacter] === currentCharacter) res.pop();
-    else return false;
+    } else if (currentCharacter === pairs[lastCharacter]) {
+      res.pop();
+    } else {
+      return false;
+    }
   }
 
   return res.length === 0;
